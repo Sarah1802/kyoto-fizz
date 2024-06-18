@@ -1,0 +1,10 @@
+.page1 {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    background-image: url(kyotofizz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
