@@ -30,7 +30,7 @@ p {
     flex-basis: 95%;
     height: 95%;
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template: 1fr 1fr 2fr / repeat(3, 1fr);
     gap: 20px;
 }
 
