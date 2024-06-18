@@ -35,6 +35,20 @@ p {
 }
 
 .grid-container div {
-    background-color: white;
-    
+    color: white;
+}
+
+.box7 {
+    background-image: url("light-particles/lightparticle7.png");
+    background-size: contain;
+}
+
+.box8 {
+    background-image: url("light-particles/lightparticle8.png");
+    background-size: contain;
+}
+
+.box9 {
+    background-image: url("light-particles/lightparticle9.png");
+    background-size: contain;
 }
