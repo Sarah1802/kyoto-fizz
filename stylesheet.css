@@ -8,3 +8,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+h1 {
+    font-family: "DatalegreyaThin";
+    color: white;
+    font-weight: bold;
+    letter-spacing: 15px;
+    font-size: 70px;
+}
