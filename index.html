@@ -9,24 +9,49 @@
     <link href="stylesheet.css" rel="stylesheet">
 </head>
 <body>
-    <div class="page1">
+    <div class="page1" data-value="2">
         <div class="grid-container">
+
             <div>
                 <div>
-                    <h1 class="header">ARTIST. DEVELOPER.</h1>
+                    <h1 class="header lightparticle" data-value="2">ARTIST. DEVELOPER.</h1>
                 </div>
                 <div>
-                    <p class="description">HELLO, I AM A COMPUTER SCIENCE STUDENT BASED IN VANCOUVER, BC. I LOVE BUILDING WEBSITES, ART, AND DRINKS.</p>
+                    <p class="description lightparticle" data-value="2">HELLO, I AM A COMPUTER SCIENCE STUDENT BASED IN VANCOUVER, BC. I LOVE BUILDING WEBSITES, ART, AND DRINKS.</p>
                 </div>
             </div>
-            <div class="box4"></div>
-            <div class="box5"></div>
-            <div class="box6"></div>
-            <div class="box7"></div>
-            <div class="box8"></div>
-            <div class="box9"></div>
+            <div class="box4 lightparticle" data-value="9"></div>
+            <div class="box5 lightparticle" data-value="-3"></div>
+            <div class="box6 lightparticle" data-value="1"></div>
+            <div class="box7 lightparticle" data-value="-4"></div>
+            <div class="box8 lightparticle" data-value="4"></div>
+            <div class="box9 lightparticle" data-value="-8"></div>
         </div>
     </div>
-    
+
+    <script>
+        document.addEventListener("mousemove", parallax);
+        
+
+        function parallax(e) {
+            document.querySelectorAll(".lightparticle").forEach(function(move) {
+                var moving_value = move.getAttribute("data-value");
+                var x = e.clientX * (moving_value * -1) / 200;
+                var y = e.clientY * moving_value / 200;
+
+                move.style.transform = "translateX(" + x +"px) translateY(" + y +"px)";
+            });
+
+            document.querySelectorAll(".page1").forEach(function(move) {
+                var zoom_value = move.getAttribute("data-value");
+                var y = Math.abs(e.clientY - e.clientX) * zoom_value / 500 + 100;
+                console.log(move.style);
+                console.log(y);
+                move.style.backgroundSize = "auto "+ y +"vh";
+            });
+
+        }
+    </script>
+
 </body>
 </html>
