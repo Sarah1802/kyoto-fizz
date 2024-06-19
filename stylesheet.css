@@ -22,18 +22,6 @@
     align-items: center;
 }
 
-.title {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    color: white;
-    font-family: "caviar_dreamsregular";
-    font-weight: lighter;
-    font-style: normal;
-    font-size: 40px;
-    letter-spacing: 5px;
-}
-
-
 .grid-container {
     flex-basis: 95%;
     height: 95%;
@@ -42,8 +30,60 @@
     gap: 20px;
 }
 
-.grid-container div {
-    color: white;
+.header {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.header {
+    color: rgb(255, 246, 234);
+    font-family: "caviar_dreamsregular";
+    font-size: 4rem;
+    letter-spacing: 10px;
+    text-align: start;
+    position: relative;
+    left: 50px;
+    line-height: 1.5;
+}
+
+h1 {
+    padding: 0;
+}
+
+.smaller {
+    font-size: 2rem;
+}
+
+
+.description {
+    color: rgb(255, 246, 234);
+    font-family: "DatalegreyaThin";
+    position: relative;
+    left: 50px;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.box4 {
+    background-image: url("light-particles/lightparticle4.png");
+    background-size: contain;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.box5 {
+    background-image: url("light-particles/lightparticle5.png");
+    background-size: contain;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.box6 {
+    background-image: url("light-particles/lightparticle6.png");
+    background-size: contain;
+    grid-column: 3;
+    grid-row: 2;
 }
 
 .box7 {
